@@ -27,16 +27,10 @@ public class GmailTest {
 
     @BeforeClass
     public static void before(){
-<<<<<<< HEAD
-        System.setProperty("webdriver.chrome.driver", "D:/Tools/seleniumDrivers/chromedriver.exe");
-        driver= new ChromeDriver();
-        //driver= new FirefoxDriver();
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
         driver.manage().window().maximize();
-=======
         driver= new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
->>>>>>> origin/master
     }
     @AfterClass
     public static void after(){
@@ -62,7 +56,7 @@ public class GmailTest {
         WebElement signInButton = driver.findElement(By.id("signIn"));
         signInButton.click();
 
-<<<<<<< HEAD
+
         //WebElement composeButton = driver.findElement(By.xpath(".//*[@id=':4i']/div/div"));
         //composeButton.click();
 
@@ -78,8 +72,8 @@ public class GmailTest {
                 System.out.println(driver.getTitle());
         String title = driver.getTitle();
         assertTrue(title.contains("tt88252@gmail.com"));
-=======
-        WebElement composeButton = driver.findElement(By.xpath(".//*[@id=':4i']/div/div"));
+
+       // WebElement composeButton = driver.findElement(By.xpath(".//*[@id=':4i']/div/div"));
         composeButton.click();
 
         driver.findElement(By.className("vO")).sendKeys("tt88252@gmail.com");
@@ -88,6 +82,6 @@ public class GmailTest {
         driver.findElement(By.xpath("//div[text()='Send']")).click();
 
 
->>>>>>> origin/master
+
     }
 }

@@ -26,7 +26,7 @@ public class InboxPage {
     @FindBy(xpath = "//div[contains(text(),'Send') and @role='button']")
     private WebElement sendButton;
 
-    @FindBy()
+    @FindBy(xpath = "//table[@class='F cf zt']//tr[1]//td[6]//span[1]")
     private WebElement lastMail;
     WebDriver driver;
 

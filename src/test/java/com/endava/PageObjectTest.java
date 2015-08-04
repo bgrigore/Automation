@@ -26,7 +26,7 @@ public class PageObjectTest {
 
         String subject = "test";
         InboxPage inbox = page.login("endavaselenium@gmail.com","endavaqa");
-        inbox.composeMessage("endavaselenium@gmail.com",subject,"testare");
+        inbox.composeMessage("endavaselenium@gmail.com",subject,"test");
         inbox.checkLastEmail(subject);
     }
 
